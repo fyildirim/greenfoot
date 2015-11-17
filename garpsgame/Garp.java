@@ -41,5 +41,11 @@ public class Garp extends Actor
             setRotation(90);
             move(5);
         }
+        
+        Gnomus gnomus = getOneObjectAtOffset(0, 0, Gnomus.class);
+        if (gnomus != null) {
+        	getWorld().removeObject(this);
+        	Greenfoot.stop();
+        }
     }    
 }
