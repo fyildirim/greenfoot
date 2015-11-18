@@ -10,7 +10,10 @@ public class Gnomus extends Actor
 {
     public void act() 
     {
-    	move(1);
+    	move(7);
+    	if(foundRock()) {
+	    	setRotation(getRotation() + 255);   
+	    }
     	if(Greenfoot.getRandomNumber(100) > 90) setRotation(getRotation() + 30);
     	if(atWorldEdge()) {
     		if(Greenfoot.getRandomNumber(10) > 5) {
@@ -32,6 +35,12 @@ public class Gnomus extends Actor
             return true;
         }
         return false;
+    }
+    
+    protected boolean foundRock() {
+        Actor rock = getOneObjectAtOffset(0, 0, Rock.class);
+        if(rock != null) {return true;}
+        else {return false;}
     }
 }
 
