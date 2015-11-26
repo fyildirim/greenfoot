@@ -22,6 +22,12 @@ public class Gnomus extends Actor
     		else {
     		    setRotation(getRotation() - 255);
     		}
+    		
+    		Garp garp = getOneObjectAtOffset(0, 0, Garp.class);
+			if (garp != null) {
+				getWorld().removeObject(garp);
+				Greenfoot.stop();
+			}
     	}
     	//setRotation(Greenfoot.getRandomNumber(361));
     }   

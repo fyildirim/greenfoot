@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Score
+comment0.text=\n\n\ Deze\ klasse\ is\ een\ hulpklasse\ om\ al\ te\ ingewikkelde\ code\ te\ voorkomen.\n\n\ Er\ is\ een\ methode\ die\ de\ hoogte\ en\ de\ lengte\ van\ een\ string\ berekent.\ \n\n\ Vooraf\ moet\ het\ juiste\ font\ voor\ de\ image\ gezet\ zijn\ zodat\ de\ juiste\ maten\ van\ de\ string\n\n\ berekend\ kunnen\ worden.\n\n\ \n\n\ @author\ Ton\ van\ Beuningen\ \n\n\ @version\ 19-10-2012\n\n
+comment1.params=image\ tekst
+comment1.target=java.awt.Dimension\ getTextDimensions(greenfoot.GreenfootImage,\ java.lang.String)
+comment1.text=\n\n\ De\ methode\ getTextDimensions\ berekent\ de\ breedte\ en\ de\ hoogte\ van\ de\ string\ in\ \n\n\ pixels.\n\n\ \n\n\ @param\ image\ De\ Greenfootimage\ waarin\ de\ string\ wordt\ geplaatst.\n\n\ @param\ tekst\ de\ String\ waarvan\ de\ breedte\ en\ de\ hoogte\ wordt\ berekend.\n\n\ @return\ Dimension\ met\ daarin\ de\ breedte\ en\ de\ hoogte\ van\ de\ string\n\n
+numComments=2
